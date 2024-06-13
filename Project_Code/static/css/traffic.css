@@ -1,0 +1,43 @@
+#trafficChart {
+    max-width: 95%;
+    height: auto;
+}
+
+.pie-chart-container {
+    position: absolute;
+    left: 20px;   /* 원하는 위치로 조정 */
+    bottom: 70px;
+    width: 350px;  /* 원형 그래프 크기 조정 */
+    height: 350px; /* 원형 그래프 크기 조정 */
+}
+
+.pie-chart-container p{
+    width: 350px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.graph_image{
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+}
+
+#graph_image_box{
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+
+}
+
+#graph_image_box p{
+    display: flex;
+	align-items: center;
+    margin: 0 130px 50px 0;
+}
+
+#graph_image_box b{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}

@@ -1,0 +1,147 @@
+/* 사고당 부상자 이미지 */
+
+#accident_and_injury{
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+}
+
+#accident_and_injury p{
+    width: 300px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#average-injuries-value{
+    color: #E48600;
+}
+
+#injured_per_accident{
+    width: 280px;
+    height: 280px;
+    margin-left: 20px;
+}
+
+
+
+/* 사고량 부상자 이미지 */
+
+.accident_graph_image{
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+}
+
+#accident_graph_image_box{
+    position: absolute;
+    right: 10px;
+    bottom: 60px;
+}
+
+#accident_graph_image_box p{
+    display: flex;
+    align-items: center;
+    margin: 0 60px 50px 0;
+}
+
+#accident_graph_image_box b{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+/* 그래프 전환 select */
+
+.dropdown {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+.dropdown-toggle {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    float: right;
+    
+}
+
+.dropdown-toggle:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.dropdown-menu.show {
+    display: block;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 원형 그래프 */
+
+.pie-chart-container {
+    position: absolute;
+    width: 350px;  /* 원형 그래프 크기 조정 */
+    height: 350px; /* 원형 그래프 크기 조정 */
+}
+
+#accident-pie-box{
+    left: 10px;
+    bottom: 50px;
+}
+
+#injury-pie-box{
+    right: 10px;
+    bottom: 50px;
+}
+
+.pie-chart-container p{
+    width: 350px;
+    margin: 10px 0 0 0;
+    text-align: center;
+}

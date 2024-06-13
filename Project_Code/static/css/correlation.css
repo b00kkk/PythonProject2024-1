@@ -1,0 +1,10 @@
+#map-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#chart-box{
+    width: 90%;
+}
+
